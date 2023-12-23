@@ -4,42 +4,41 @@
     <title>My Data Science Portfolio</title>
     <style>
         /* CSS styles for the layout */
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
         .container {
             display: flex;
-            flex-direction: column;
-            height: 100vh; /* Set height to 100vh */
         }
+
         .left-side {
-            width: 25%;
-            background-color: #f1f1f1;
-            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* Add your other styles for the left-side box here */
         }
+
         .right-side {
-            width: 75%;
-            padding: 20px;
+            flex: 3;
+            display: flex;
+            flex-direction: column;
         }
+
         .tab {
-            display: inline-block;
-            padding: 10px;
-            background-color: #ddd;
-            margin-right: 10px;
-            cursor: pointer;
+            /* Add your styles for the tabs here */
         }
+
         .subtab {
             display: none;
-            padding: 10px;
-            background-color: #f9f9f9;
-            margin-top: 10px;
+            /* Add your styles for the subtabs here */
+        }
+
+        .active {
+            background-color: #ccc; /* Change this to your preferred color */
         }
         </style>
     </head>
     <body>
-        <div class="container">
+        <<div class="container">
             <div class="left-side">
                 <!-- Static text and information -->
                 <h2>About Me</h2>
@@ -51,7 +50,7 @@
                 <div class="tab" onclick="openTab('tab2')">Tab 2</div>
                 <div class="tab" onclick="openTab('tab3')">Tab 3</div>
                 <div class="tab" onclick="openTab('tab4')">Tab 4</div>
-
+        
                 <!-- Subtabs for Tab 1 -->
                 <div id="tab1" class="subtab">
                     <h3>Subtab 1</h3>
@@ -127,14 +126,18 @@
     </div>
 
     <script>
-        // JavaScript function to open the selected tab
         function openTab(tabName) {
-            var i, subtabs;
+            var i, subtabs, tabs;
             subtabs = document.getElementsByClassName("subtab");
+            tabs = document.getElementsByClassName("tab");
             for (i = 0; i < subtabs.length; i++) {
                 subtabs[i].style.display = "none";
             }
+            for (i = 0; i < tabs.length; i++) {
+                tabs[i].className = tabs[i].className.replace(" active", "");
+            }
             document.getElementById(tabName).style.display = "block";
+            event.currentTarget.className += " active";
         }
     </script>
 </body>
