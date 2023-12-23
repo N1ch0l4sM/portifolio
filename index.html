@@ -97,15 +97,15 @@
                 <p>Content for Subtab 1</p>
             </div>
             <div id="Tab2" class="tabcontent">
-                <h3>Subtab 1</h3>
+                <h3>Subtab 2</h3>
                 <p>Content for Subtab 1</p>
             </div>
             <div id="Tab3" class="tabcontent">
-                <h3>Subtab 1</h3>
+                <h3>Subtab 3</h3>
                 <p>Content for Subtab 1</p>
             </div>
             <div id="Tab4" class="tabcontent">
-                <h3>Subtab 1</h3>
+                <h3>Subtab 4</h3>
                 <p>Content for Subtab 1</p>
             </div>
         </div>
@@ -113,10 +113,10 @@
     
     <script>
         function openTab(tabName) {
-            var i, subtabs, tablinks;
-            subtabs = document.getElementsByClassName("subtab");
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < subtabs.length; i++) {
-                subtabs[i].style.display = "none";
+                tabcontent[i].style.display = "none";
             }
             tablinks = document.getElementsByClassName("tablinks");
             for (i = 0; i < tablinks.length; i++) {
