@@ -83,20 +83,41 @@
                 <p>Insert your static text and information here.</p>
             </div>
 
-                <!-- Subtabs -->
-
+            
+            <!-- Subtabs -->
+            <div id="tab1" class="tabcontent">
+                <div class="subtab">
+                    <h3>Subtab 1</h3>
+                    <p>Content for Subtab 1</p>
+                </div>
+                <div class="subtab">
+                    <h3>Subtab 2</h3>
+                    <p>Content for Subtab 2</p>
+                </div>
+                <div class="subtab">
+                    <h3>Subtab 3</h3>
+                    <p>Content for Subtab 3</p>
+                </div>
+                <div class="subtab">
+                    <h3>Subtab 4</h3>
+                    <p>Content for Subtab 4</p>
+                </div>
             </div>
-    </div>
+        </div>
 
     <script>
-        // JavaScript function to open the selected tab
         function openTab(tabName) {
-            var i, subtabs;
+            var i, subtabs, tablinks;
             subtabs = document.getElementsByClassName("subtab");
             for (i = 0; i < subtabs.length; i++) {
                 subtabs[i].style.display = "none";
             }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
             document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
         }
     </script>
 </body>
