@@ -35,6 +35,17 @@
             background-color: #f0f0f0;
             text-align: center;
         }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+        }
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -53,19 +64,39 @@
 
         <div id="tab1" class="tabcontent">
             <h2>Data Analysis</h2>
-            <p><p><img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/day_price.png?raw=true" alt="Day Price Image"></p></p>
+            <div class="grid-container">
+                <div class="grid-item">Tab 1 - Subtab 1</div>
+                <div class="grid-item">Tab 1 - Subtab 2</div>
+                <div class="grid-item">Tab 1 - Subtab 3</div>
+                <div class="grid-item">Tab 1 - Subtab 4</div>
+            </div>
         </div>
         <div id="tab2" class="tabcontent">
-            <h2>Data Analysis</h2>
-            <p>Content for Tab 2.</p>
+            <h2>SQL</h2>
+            <div class="grid-container">
+                <div class="grid-item">Tab 2 - Subtab 1</div>
+                <div class="grid-item">Tab 2 - Subtab 2</div>
+                <div class="grid-item">Tab 2 - Subtab 3</div>
+                <div class="grid-item">Tab 2 - Subtab 4</div>
+            </div>
         </div>
         <div id="tab3" class="tabcontent">
             <h2>Machine Learning</h2>
-            <p>Content for Tab 3.</p>
+            <div class="grid-container">
+                <div class="grid-item">Tab 3 - Subtab 1</div>
+                <div class="grid-item">Tab 3 - Subtab 2</div>
+                <div class="grid-item">Tab 3 - Subtab 3</div>
+                <div class="grid-item">Tab 3 - Subtab 4</div>
+            </div>
         </div>
         <div id="tab4" class="tabcontent">
             <h2>Tableau</h2>
-            <p>Content for Tab 4.</p>
+            <div class="grid-container">
+                <div class="grid-item">Tab 4 - Subtab 1</div>
+                <div class="grid-item">Tab 4 - Subtab 2</div>
+                <div class="grid-item">Tab 4 - Subtab 3</div>
+                <div class="grid-item">Tab 4 - Subtab 4</div>
+            </div>
         </div>
 
         <div class="static-box">
