@@ -8,25 +8,34 @@
     <hr>
     <h3>Data analysis</h3>
     <a href="/sample_page">Airlines</a>
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 10px;">
-        <div>
-            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/day_price.png?raw=true" alt="1">
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/img1.jpg?raw=true" style="width:100%">
+            <div class="text">Caption Text</div>
         </div>
-        <div>
-            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/delay_time_dist.png?raw=true" alt="2">
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/img2.jpg?raw=true" style="width:100%">
+            <div class="text">Caption Two</div>
         </div>
-        <div>
-            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/class_coach_bi.png?raw=true" alt="3">
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/img3.jpg?raw=true" style="width:100%">
+            <div class="text">Caption Three</div>
         </div>
-        <div>
-            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/inflight_price.png?raw=true" alt="4">
-        </div>
-        <div>
-            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/passangers_hour.png?raw=true" alt="5">
-        </div>
-        <div>
-            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/price_coach_V2.png?raw=true" alt="6">
-        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
     </div>
     <hr>
     <a href="/pdf/sample_presentation.pdf">Titanic</a>
