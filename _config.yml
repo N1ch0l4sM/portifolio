@@ -1,9 +1,9 @@
-title: John Doe # your name (or website title) here
-logo: "/images/logo.png?raw=true" # your photo (or logo) here
-description: > # your text below (remove <br> elements if you don't need line breaks)
-  First description 
-  <br><br>
-  Second description 
+title: Data Science Portfolio
+logo: "/images/logo.png?raw=true"
+description: >
+  Welcome to my data science portfolio! Here, you will find a collection of my data science projects and analyses. 
+  I am passionate about leveraging data to gain insights and solve complex problems. 
+  Explore my work and feel free to reach out if you have any questions or collaboration opportunities! 
   <br><br>
   <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a> 
   
