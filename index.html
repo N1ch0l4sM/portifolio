@@ -1,135 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>My Data Science Portfolio</title>
     <style>
+        /* CSS styles for the layout */
         .container {
             display: flex;
             flex-direction: row;
-            align-items: flex-start;
         }
-        .static-box {
-            width: 20%;
-            height: 100vh;
-            padding: 10px;
-            margin: 10px;
-            margin-left: auto; /* Add this line */
-            border: 1px solid #ccc;
-            background-color: #f0f0f0;
-            text-align: center;
+        .left-side {
+            width: 25%;
+            background-color: #f1f1f1;
+            padding: 20px;
         }
-        .tab-container {
-            display: flex;
-            flex-direction: row; /* Change to row */
-            justify-content: space-around; /* Add this line */
-            width: 50%;
+        .right-side {
+            width: 75%;
+            padding: 20px;
         }
         .tab {
-            flex: 1;
-            margin: 10px;
+            display: inline-block;
             padding: 10px;
-            border: 1px solid #ccc;
-            background-color: #f0f0f0;
-            text-align: center;
+            background-color: #ddd;
+            margin-right: 10px;
             cursor: pointer;
         }
-        .tabcontent {
+        .subtab {
             display: none;
             padding: 10px;
-            border: 1px solid #ccc;
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
-        }
-        .grid-item {
-            border: 1px solid #ccc;
-            padding: 10px;
-            background-color: #f0f0f0;
-            text-align: center;
-        }
-        .subtab-container {
-            width: 80%;
-            margin-left: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-top: 10px; /* Add this line */
-            margin-bottom: 10px; /* Add this line */
-            margin-right: 10px; /* Add this line */
+            background-color: #f9f9f9;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="static-box">
-            <h1>Welcome to my Data Science Portfolio!</h1>
-            <p>This site is currently under construction. Check back soon!</p>
+        <div class="left-side">
+            <!-- Static text and information -->
+            <h2>About Me</h2>
+            <p>Insert your static text and information here.</p>
         </div>
+        <div class="right-side">
+            <!-- Tabs -->
+            <div class="tab" onclick="openTab('tab1')">Tab 1</div>
+            <div class="tab" onclick="openTab('tab2')">Tab 2</div>
+            <div class="tab" onclick="openTab('tab3')">Tab 3</div>
+            <div class="tab" onclick="openTab('tab4')">Tab 4</div>
 
-        <div class="tab-container">
-            <div class="tab" onclick="openTab('tab1')">Data Analysis</div>
-            <div class="tab" onclick="openTab('tab2')">SQL</div>
-            <div class="tab" onclick="openTab('tab3')">Machine Learning</div>
-            <div class="tab" onclick="openTab('tab4')">Tableau</div>
-        </div>
-    </div>
-
-
-    <div class="subtab-container">
-        <div id="tab1" class="tabcontent">
-            <h2>Data Analysis</h2>
-            <div class="grid-container">
-                <div class="grid-item">Tab 1 - Subtab 1</div>
-                <div class="grid-item">Tab 1 - Subtab 2</div>
-                <div class="grid-item">Tab 1 - Subtab 3</div>
-                <div class="grid-item">Tab 1 - Subtab 4</div>
+            <!-- Subtabs -->
+            <div id="tab1" class="subtab">
+                <h3>Subtab 1</h3>
+                <p>Insert your project details for subtab 1 here.</p>
             </div>
-        </div>
-        <div id="tab2" class="tabcontent">
-            <h2>SQL</h2>
-            <div class="grid-container">
-                <div class="grid-item">Tab 2 - Subtab 1</div>
-                <div class="grid-item">Tab 2 - Subtab 2</div>
-                <div class="grid-item">Tab 2 - Subtab 3</div>
-                <div class="grid-item">Tab 2 - Subtab 4</div>
+            <div id="tab2" class="subtab">
+                <h3>Subtab 2</h3>
+                <p>Insert your project details for subtab 2 here.</p>
             </div>
-        </div>
-        <div id="tab3" class="tabcontent">
-            <h2>Machine Learning</h2>
-            <div class="grid-container">
-                <div class="grid-item">Tab 3 - Subtab 1</div>
-                <div class="grid-item">Tab 3 - Subtab 2</div>
-                <div class="grid-item">Tab 3 - Subtab 3</div>
-                <div class="grid-item">Tab 3 - Subtab 4</div>
+            <div id="tab3" class="subtab">
+                <h3>Subtab 3</h3>
+                <p>Insert your project details for subtab 3 here.</p>
             </div>
-        </div>
-        <div id="tab4" class="tabcontent">
-            <h2>Tableau</h2>
-            <div class="grid-container">
-                <div class="grid-item">Tab 4 - Subtab 1</div>
-                <div class="grid-item">Tab 4 - Subtab 2</div>
-                <div class="grid-item">Tab 4 - Subtab 3</div>
+            <div id="tab4" class="subtab">
+                <h3>Subtab 4</h3>
+                <p>Insert your project details for subtab 4 here.</p>
             </div>
         </div>
     </div>
 
     <script>
+        // JavaScript function to open the selected tab
         function openTab(tabName) {
-            var i, tabcontent, tabs;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            tabs = document.getElementsByClassName("tab");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            for (i = 0; i < tabs.length; i++) {
-                tabs[i].className = tabs[i].className.replace(" active", "");
+            var i, subtabs;
+            subtabs = document.getElementsByClassName("subtab");
+            for (i = 0; i < subtabs.length; i++) {
+                subtabs[i].style.display = "none";
             }
             document.getElementById(tabName).style.display = "block";
-            event.currentTarget.className += " active";
         }
     </script>
 </body>
 </html>
-
-        
