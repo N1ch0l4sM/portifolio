@@ -48,6 +48,13 @@
             background-color: #f0f0f0;
             text-align: center;
         }
+        .subtab-container {
+            width: 80%; /* Add this line */
+            margin-left: auto; /* Add this line */
+            display: flex; /* Add this line */
+            flex-direction: column; /* Add this line */
+            align-items: flex-start; /* Add this line */
+        }
     </style>
 </head>
 <body>
@@ -64,6 +71,7 @@
             <div class="tab" onclick="openTab('tab4')">Tableau</div>
         </div>
     </div>
+
 
     <div class="subtab-container">
         <div id="tab1" class="tabcontent">
@@ -116,44 +124,6 @@
 </body>
 </html>
 
-        <div class="subtab-container">
-            <div id="tab1" class="tabcontent">
-                <h2>Data Analysis</h2>
-                <div class="grid-container">
-                    <div class="grid-item">Tab 1 - Subtab 1</div>
-                    <div class="grid-item">Tab 1 - Subtab 2</div>
-                    <div class="grid-item">Tab 1 - Subtab 3</div>
-                    <div class="grid-item">Tab 1 - Subtab 4</div>
-                </div>
-            </div>
-            <div id="tab2" class="tabcontent">
-                <h2>SQL</h2>
-                <div class="grid-container">
-                    <div class="grid-item">Tab 2 - Subtab 1</div>
-                    <div class="grid-item">Tab 2 - Subtab 2</div>
-                    <div class="grid-item">Tab 2 - Subtab 3</div>
-                    <div class="grid-item">Tab 2 - Subtab 4</div>
-                </div>
-            </div>
-            <div id="tab3" class="tabcontent">
-                <h2>Machine Learning</h2>
-                <div class="grid-container">
-                    <div class="grid-item">Tab 3 - Subtab 1</div>
-                    <div class="grid-item">Tab 3 - Subtab 2</div>
-                    <div class="grid-item">Tab 3 - Subtab 3</div>
-                    <div class="grid-item">Tab 3 - Subtab 4</div>
-                </div>
-            </div>
-            <div id="tab4" class="tabcontent">
-                <h2>Tableau</h2>
-                <div class="grid-container">
-                    <div class="grid-item">Tab 4 - Subtab 1</div>
-                    <div class="grid-item">Tab 4 - Subtab 2</div>
-                    <div class="grid-item">Tab 4 - Subtab 3</div>
-                </div>
-            </div>
-        </div>
-    </div>
     
     <script>
         function openTab(tabName) {
