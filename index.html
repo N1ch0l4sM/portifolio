@@ -104,12 +104,20 @@
 
     <script>
         function openTab(tabName) {
-            var i, tabcontent;
+            var i, tabcontent, subtabs;
             tabcontent = document.getElementsByClassName("tabcontent");
+            subtabs = document.getElementsByClassName("grid-item");
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
             }
+            for (i = 0; i < subtabs.length; i++) {
+                subtabs[i].style.display = "none";
+            }
             document.getElementById(tabName).style.display = "block";
+            var activeSubtabs = document.getElementById(tabName).getElementsByClassName("grid-item");
+            for (i = 0; i < activeSubtabs.length; i++) {
+                activeSubtabs[i].style.display = "block";
+            }
         }
     </script>
 </body>
