@@ -2,15 +2,87 @@
 <html>
 <head>
     <title>My Data Science Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tab-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .tab {
+            flex: 1;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            text-align: center;
+            cursor: pointer;
+        }
+        .tabcontent {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .static-box {
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to my Data Science Portfolio!</h1>
-    <p>This site is currently under construction. Check back soon!</p>
-    <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/class_coach_bi.png?raw=true" alt="Airline Analysis">
-    <p>This image shows a visualization of the analysis conducted on airline data in the class coach.</p>
-    
-    <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/day_price.png?raw=true" alt="class_coach_bi">
-    
+    <div class="container">
+        <div class="static-box">
+            <h1>Welcome to my Data Science Portfolio!</h1>
+            <p>This site is currently under construction. Check back soon!</p>
+        </div>
+
+        <div class="tab-container">
+            <div class="tab" onclick="openTab('tab1')">Tab 1</div>
+            <div class="tab" onclick="openTab('tab2')">Tab 2</div>
+            <div class="tab" onclick="openTab('tab3')">Tab 3</div>
+            <div class="tab" onclick="openTab('tab4')">Tab 4</div>
+        </div>
+
+        <div id="tab1" class="tabcontent">
+            <h2>Tab 1</h2>
+            <p>Content for Tab 1.</p>
+        </div>
+        <div id="tab2" class="tabcontent">
+            <h2>Tab 2</h2>
+            <p>Content for Tab 2.</p>
+        </div>
+        <div id="tab3" class="tabcontent">
+            <h2>Tab 3</h2>
+            <p>Content for Tab 3.</p>
+        </div>
+        <div id="tab4" class="tabcontent">
+            <h2>Tab 4</h2>
+            <p>Content for Tab 4.</p>
+        </div>
+
+        <div class="static-box">
+            <h2>More Information</h2>
+            <p>Here you can put more static content.</p>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            var i, tabcontent;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(tabId).style.display = "block";
+        }
+    </script>
 </body>
 </html>
