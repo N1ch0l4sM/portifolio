@@ -57,67 +57,60 @@
             <p>This site is currently under construction. Check back soon!</p>
         </div>
 
-        <div class="tab-container" style="flex-direction: row;">
+        <div class="tab-container">
             <div class="tab" onclick="openTab('tab1')">Data Analysis</div>
             <div class="tab" onclick="openTab('tab2')">SQL</div>
             <div class="tab" onclick="openTab('tab3')">Machine Learning</div>
             <div class="tab" onclick="openTab('tab4')">Tableau</div>
         </div>
-    </div>
 
-    <div id="tab1" class="tabcontent">
-        <h2>Data Analysis</h2>
-        <div class="grid-container">
-            <div class="grid-item">Tab 1 - Subtab 1</div>
-            <div class="grid-item">Tab 1 - Subtab 2</div>
-            <div class="grid-item">Tab 1 - Subtab 3</div>
-            <div class="grid-item">Tab 1 - Subtab 4</div>
+        <div class="subtab-container">
+            <div id="tab1" class="tabcontent">
+                <h2>Data Analysis</h2>
+                <div class="grid-container">
+                    <div class="grid-item">Tab 1 - Subtab 1</div>
+                    <div class="grid-item">Tab 1 - Subtab 2</div>
+                    <div class="grid-item">Tab 1 - Subtab 3</div>
+                    <div class="grid-item">Tab 1 - Subtab 4</div>
+                </div>
+            </div>
+            <div id="tab2" class="tabcontent">
+                <h2>SQL</h2>
+                <div class="grid-container">
+                    <div class="grid-item">Tab 2 - Subtab 1</div>
+                    <div class="grid-item">Tab 2 - Subtab 2</div>
+                    <div class="grid-item">Tab 2 - Subtab 3</div>
+                    <div class="grid-item">Tab 2 - Subtab 4</div>
+                </div>
+            </div>
+            <div id="tab3" class="tabcontent">
+                <h2>Machine Learning</h2>
+                <div class="grid-container">
+                    <div class="grid-item">Tab 3 - Subtab 1</div>
+                    <div class="grid-item">Tab 3 - Subtab 2</div>
+                    <div class="grid-item">Tab 3 - Subtab 3</div>
+                    <div class="grid-item">Tab 3 - Subtab 4</div>
+                </div>
+            </div>
+            <div id="tab4" class="tabcontent">
+                <h2>Tableau</h2>
+                <div class="grid-container">
+                    <div class="grid-item">Tab 4 - Subtab 1</div>
+                    <div class="grid-item">Tab 4 - Subtab 2</div>
+                    <div class="grid-item">Tab 4 - Subtab 3</div>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="tab2" class="tabcontent">
-        <h2>SQL</h2>
-        <div class="grid-container">
-            <div class="grid-item">Tab 2 - Subtab 1</div>
-            <div class="grid-item">Tab 2 - Subtab 2</div>
-            <div class="grid-item">Tab 2 - Subtab 3</div>
-            <div class="grid-item">Tab 2 - Subtab 4</div>
-        </div>
-    </div>
-    <div id="tab3" class="tabcontent">
-        <h2>Machine Learning</h2>
-        <div class="grid-container">
-            <div class="grid-item">Tab 3 - Subtab 1</div>
-            <div class="grid-item">Tab 3 - Subtab 2</div>
-            <div class="grid-item">Tab 3 - Subtab 3</div>
-            <div class="grid-item">Tab 3 - Subtab 4</div>
-        </div>
-    </div>
-    <div id="tab4" class="tabcontent">
-        <h2>Tableau</h2>
-        <div class="grid-container">
-            <div class="grid-item">Tab 4 - Subtab 1</div>
-            <div class="grid-item">Tab 4 - Subtab 2</div>
-            <div class="grid-item">Tab 4 - Subtab 3</div>
-            <div class="grid-item">Tab 4 - Subtab 4</div>
-        </div>
-    </div>
-
+    
     <script>
         function openTab(tabName) {
-            var i, tabcontent, subtabs;
+            var i, tabcontent;
             tabcontent = document.getElementsByClassName("tabcontent");
-            subtabs = document.getElementsByClassName("grid-item");
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
             }
-            for (i = 0; i < subtabs.length; i++) {
-                subtabs[i].style.display = "none";
-            }
             document.getElementById(tabName).style.display = "block";
-            var activeSubtabs = document.getElementById(tabName).getElementsByClassName("grid-item");
-            for (i = 0; i < activeSubtabs.length; i++) {
-                activeSubtabs[i].style.display = "block";
-            }
         }
     </script>
 </body>
