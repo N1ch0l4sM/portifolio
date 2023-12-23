@@ -9,7 +9,7 @@
     <h3>Data analysis</h3>
     <a href="/sample_page">Airlines</a>
     <!-- Slideshow container -->
-<div class="slideshow-container">
+    <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
             <div class="numbertext">1 / 6</div>
@@ -26,17 +26,17 @@
             <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/class_coach_bi.png?raw=true" style="width:100%">
             <div class="text">Caption Three</div>
         </div>
-                <div class="mySlides fade">
+        <div class="mySlides fade">
             <div class="numbertext">4 / 6</div>
             <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/inflight_price.png?raw=true" style="width:100%">
             <div class="text">Caption Three</div>
         </div>
-                <div class="mySlides fade">
+        <div class="mySlides fade">
             <div class="numbertext">5 / 6</div>
             <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/passangers_hour.png?raw=true" style="width:100%">
             <div class="text">Caption Three</div>
         </div>
-                <div class="mySlides fade">
+        <div class="mySlides fade">
             <div class="numbertext">6 / 6</div>
             <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/price_coach_V2.png?raw=true" style="width:100%">
             <div class="text">Caption Three</div>
@@ -52,6 +52,75 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
+
+    <!-- Add CSS styles -->
+    <style>
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .fade {
+            animation: fade 1s ease-in-out infinite;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* Add more CSS styles as needed */
+
+    </style>
+
+    <!-- Add JavaScript code -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
     <hr>
     <a href="/pdf/sample_presentation.pdf">Titanic</a>
     <img src="images/dummy_thumbnail.jpg?raw=true">
