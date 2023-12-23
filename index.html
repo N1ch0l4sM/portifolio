@@ -190,7 +190,7 @@
             <div class="right-side">
                 <!-- Tab links -->
                 <div class="tab">
-                    <button class="tablinks" onclick="openTab(event, 'tab1')">Data Analysis</button>
+                    <button class="tablinks" onclick="openTab(event, 'tab1')" id="tab1">Data Analysis</button>
                     <button class="tablinks" onclick="openTab(event, 'tab2')">SQL</button>
                     <button class="tablinks" onclick="openTab(event, 'tab3')">Machine Learning</button>
                     <button class="tablinks" onclick="openTab(event, 'tab4')">Tableau</button>
@@ -199,7 +199,7 @@
                 <!-- Subtabs -->
                 <div id="tab1" class="tabcontent">
                     <div class="tab">
-                        <button class="tablinks" onclick="openSubTab(event, 'subtab1')">Airline</button>
+                        <button class="tablinks" onclick="openSubTab(event, 'subtab1')" id="subtab1">Airline</button>
                         <button class="tablinks" onclick="openSubTab(event, 'subtab2')">Titanic</button>
                         <button class="tablinks" onclick="openSubTab(event, 'subtab3')">Cars</button>
                         <button class="tablinks" onclick="openSubTab(event, 'subtab4')">Hurricane</button>
@@ -312,7 +312,7 @@
                     }
                     // Get the element with id="defaultOpen" and click on it
                     document.getElementById("tab1").click();
-
+                    document.getElementById("subtab1").click();
                     let slideIndex = 1;
                     showSlides(slideIndex);
                     // Next/previous controls
