@@ -8,7 +8,8 @@
             align-items: flex-start;
         }
         .static-box {
-            width: 50%;
+            width: 20%;
+            height: 100vh;
             padding: 10px;
             margin: 10px;
             border: 1px solid #ccc;
@@ -55,7 +56,7 @@
             <p>This site is currently under construction. Check back soon!</p>
         </div>
 
-        <div class="tab-container">
+        <div class="tab-container" style="flex-direction: row;"></div>
             <div class="tab" onclick="openTab('tab1')">Data Analysis</div>
             <div class="tab" onclick="openTab('tab2')">SQL</div>
             <div class="tab" onclick="openTab('tab3')">Machine Learning</div>
