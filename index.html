@@ -109,11 +109,11 @@
         .prev, .next {
         cursor: pointer;
         position: absolute;
-        top: 90%;
+        top: 100%;
         width: auto;
         margin-top: -22px;
         padding: 16px;
-        color: white;
+        color: rgb(0, 0, 0);
         font-weight: bold;
         font-size: 18px;
         transition: 0.6s ease;
@@ -129,7 +129,7 @@
 
         /* On hover, add a black background color with a little bit see-through */
         .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
+        background-color: rgba(107, 107, 107, 0.8);
         }
 
         /* Caption text */
@@ -184,8 +184,13 @@
     <div class="container">
             <div class="left-side">
                 <!-- Static text and information -->
-                <h2>About Me</h2>
-                <p>Insert your static text and information here.</p>
+                <h1>Data Science Portifolio</h1>
+                <!-- Add a small circle photo of yourself -->
+                <div class="profile-photo">
+                    <img src="profile.png" alt="Your Photo" class="circle-photo">
+                </div>
+                <p>Welcome to my Data Science Portfolio! Here, you will find a collection of projects showcasing my skills and expertise in the field of data science. From data analysis to machine learning, SQL to Tableau, I have worked on a variety of projects that demonstrate my ability to extract insights and make data-driven decisions.</p>
+                
             </div>
             <div class="right-side">
                 <!-- Tab links -->
@@ -310,6 +315,8 @@
                         document.getElementById(subTabName).style.display = "block";
                         event.currentTarget.className += " active";
                     }
+                    // Get the element with id="defaultOpen" and click on it
+                    document.getElementById("tab1").click();
 
                     let slideIndex = 1;
                     showSlides(slideIndex);
