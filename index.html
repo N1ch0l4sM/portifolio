@@ -19,8 +19,8 @@
         }
         .tab-container {
             display: flex;
-            flex-direction: column;
-            justify-content: space-around;
+            flex-direction: row; /* Change to row */
+            justify-content: space-around; /* Add this line */
             width: 50%;
         }
         .tab {
@@ -63,6 +63,58 @@
             <div class="tab" onclick="openTab('tab3')">Machine Learning</div>
             <div class="tab" onclick="openTab('tab4')">Tableau</div>
         </div>
+    </div>
+
+    <div class="subtab-container">
+        <div id="tab1" class="tabcontent">
+            <h2>Data Analysis</h2>
+            <div class="grid-container">
+                <div class="grid-item">Tab 1 - Subtab 1</div>
+                <div class="grid-item">Tab 1 - Subtab 2</div>
+                <div class="grid-item">Tab 1 - Subtab 3</div>
+                <div class="grid-item">Tab 1 - Subtab 4</div>
+            </div>
+        </div>
+        <div id="tab2" class="tabcontent">
+            <h2>SQL</h2>
+            <div class="grid-container">
+                <div class="grid-item">Tab 2 - Subtab 1</div>
+                <div class="grid-item">Tab 2 - Subtab 2</div>
+                <div class="grid-item">Tab 2 - Subtab 3</div>
+                <div class="grid-item">Tab 2 - Subtab 4</div>
+            </div>
+        </div>
+        <div id="tab3" class="tabcontent">
+            <h2>Machine Learning</h2>
+            <div class="grid-container">
+                <div class="grid-item">Tab 3 - Subtab 1</div>
+                <div class="grid-item">Tab 3 - Subtab 2</div>
+                <div class="grid-item">Tab 3 - Subtab 3</div>
+                <div class="grid-item">Tab 3 - Subtab 4</div>
+            </div>
+        </div>
+        <div id="tab4" class="tabcontent">
+            <h2>Tableau</h2>
+            <div class="grid-container">
+                <div class="grid-item">Tab 4 - Subtab 1</div>
+                <div class="grid-item">Tab 4 - Subtab 2</div>
+                <div class="grid-item">Tab 4 - Subtab 3</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            var i, tabcontent;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
+</body>
+</html>
 
         <div class="subtab-container">
             <div id="tab1" class="tabcontent">
