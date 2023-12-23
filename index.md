@@ -12,18 +12,33 @@
 <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/img1.jpg?raw=true" style="width:100%">
+            <div class="numbertext">1 / 6</div>
+            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/day_price.png?raw=true" style="width:100%">
             <div class="text">Caption Text</div>
         </div>
         <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/img2.jpg?raw=true" style="width:100%">
+            <div class="numbertext">2 / 6</div>
+            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/delay_time_dist.png?raw=true" style="width:100%">
             <div class="text">Caption Two</div>
         </div>
         <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/img3.jpg?raw=true" style="width:100%">
+            <div class="numbertext">3 / 6</div>
+            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/class_coach_bi.png?raw=true" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+                <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/inflight_price.png?raw=true" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+                <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/passangers_hour.png?raw=true" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+                <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/price_coach_V2.png?raw=true" style="width:100%">
             <div class="text">Caption Three</div>
         </div>
         <!-- Next and previous buttons -->
