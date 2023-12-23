@@ -90,41 +90,40 @@
                     <button class="tablinks" onclick="openTab('tab4')">Tab 4</button>
                 </div>
 
-            
-            <!-- Subtabs -->
-            <div id="tab1" class="tabcontent">
-                <h3>Subtab 1</h3>
-                <p>Content for Subtab 1</p>
-            </div>
-            <div id="tab2" class="tabcontent">
-                <h3>Subtab 2</h3>
-                <p>Content for Subtab 1</p>
-            </div>
-            <div id="tab3" class="tabcontent">
-                <h3>Subtab 3</h3>
-                <p>Content for Subtab 1</p>
-            </div>
-            <div id="tab4" class="tabcontent">
-                <h3>Subtab 4</h3>
-                <p>Content for Subtab 1</p>
-            </div>
+                <!-- Subtabs -->
+                <div id="tab1" class="tabcontent">
+                    <h3>Subtab 1</h3>
+                    <p>Content for Subtab 1</p>
+                </div>
+                <div id="tab2" class="tabcontent">
+                    <h3>Subtab 2</h3>
+                    <p>Content for Subtab 2</p>
+                </div>
+                <div id="tab3" class="tabcontent">
+                    <h3>Subtab 3</h3>
+                    <p>Content for Subtab 3</p>
+                </div>
+                <div id="tab4" class="tabcontent">
+                    <h3>Subtab 4</h3>
+                    <p>Content for Subtab 4</p>
+                </div>
+
+                <script>
+                    function openTab(tabName) {
+                        var i, tabcontent, tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+                        document.getElementById(tabName).style.display = "block";
+                        event.currentTarget.className += " active";
+                    }
+                </script>
         </div>
     </div>
-    
-    <script>
-        function openTab(tabName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < subtabs.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
 </body>
 </html>
