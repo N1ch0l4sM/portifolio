@@ -45,13 +45,6 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
     <!-- Add CSS styles -->
     <style>
         .slideshow-container {
@@ -63,6 +56,8 @@
         .mySlides {
             display: none;
         }
+
+        /* Add additional styles as needed */
 
     </style>
 
@@ -103,12 +98,14 @@
     <a href="/pdf/sample_presentation.pdf">Titanic</a>
     <img src="images/dummy_thumbnail.jpg?raw=true">
     <hr>
-    <a href="http://example.com/">Cars</a>
-    <img src="images/dummy_thumbnail.jpg?raw=true">
-    <hr>
-    <a href="http://example.com/">Project 4 Title</a>
-    <img src="images/dummy_thumbnail.jpg?raw=true">
-    <hr>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
     <h3>Machine Learning</h3>
     <ul>
         <li><a href="http://example.com/">Project 1 Title</a></li>
