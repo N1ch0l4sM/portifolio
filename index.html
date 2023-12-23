@@ -12,6 +12,7 @@
             height: 100vh;
             padding: 10px;
             margin: 10px;
+            margin-left: auto; /* Add this line */
             border: 1px solid #ccc;
             background-color: #f0f0f0;
             text-align: center;
@@ -56,11 +57,12 @@
             <p>This site is currently under construction. Check back soon!</p>
         </div>
 
-        <div class="tab-container" style="flex-direction: row;"></div>
+        <div class="tab-container" style="flex-direction: row;">
             <div class="tab" onclick="openTab('tab1')">Data Analysis</div>
             <div class="tab" onclick="openTab('tab2')">SQL</div>
             <div class="tab" onclick="openTab('tab3')">Machine Learning</div>
             <div class="tab" onclick="openTab('tab4')">Tableau</div>
+        </div>
         </div>
 
         <div id="tab1" class="tabcontent">
