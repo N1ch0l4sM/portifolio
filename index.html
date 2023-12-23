@@ -6,6 +6,7 @@
         /* CSS styles for the layout */
         /* Style the tab */
         .tab {
+        flex: 3;
         overflow: hidden;
         border: 1px solid #ccc;
         background-color: #f1f1f1;
@@ -34,7 +35,6 @@
 
         /* Style the tab content */
         .tabcontent {
-        flex: 3;
         display: none;
         padding: 6px 12px;
         border: 1px solid #ccc;
@@ -86,7 +86,7 @@
 
             
             <!-- Subtabs -->
-            <div id="tab1" class="right-side">
+            <div id="tab1" class="tabcontent">
                 <div class="subtab">
                     <h3>Subtab 1</h3>
                     <p>Content for Subtab 1</p>
