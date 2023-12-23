@@ -4,9 +4,15 @@
     <title>My Data Science Portfolio</title>
     <style>
         /* CSS styles for the layout */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
         .container {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            height: 100%;
         }
         .left-side {
             width: 25%;
@@ -30,40 +36,94 @@
             background-color: #f9f9f9;
             margin-top: 10px;
         }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="left-side">
-            <!-- Static text and information -->
-            <h2>About Me</h2>
-            <p>Insert your static text and information here.</p>
-        </div>
-        <div class="right-side">
-            <!-- Tabs -->
-            <div class="tab" onclick="openTab('tab1')">Tab 1</div>
-            <div class="tab" onclick="openTab('tab2')">Tab 2</div>
-            <div class="tab" onclick="openTab('tab3')">Tab 3</div>
-            <div class="tab" onclick="openTab('tab4')">Tab 4</div>
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left-side">
+                <!-- Static text and information -->
+                <h2>About Me</h2>
+                <p>Insert your static text and information here.</p>
+            </div>
+            <div class="right-side">
+                <!-- Tabs -->
+                <div class="tab" onclick="openTab('tab1')">Tab 1</div>
+                <div class="tab" onclick="openTab('tab2')">Tab 2</div>
+                <div class="tab" onclick="openTab('tab3')">Tab 3</div>
+                <div class="tab" onclick="openTab('tab4')">Tab 4</div>
 
-            <!-- Subtabs -->
-            <div id="tab1" class="subtab">
-                <h3>Subtab 1</h3>
-                <p>Insert your project details for subtab 1 here.</p>
+                <!-- Subtabs -->
+                <div id="tab1" class="subtab">
+                    <h3>Subtab 1</h3>
+                    <p>Insert your project details for subtab 1 here.</p>
+                </div>
+                <div id="tab2" class="subtab">
+                    <h3>Subtab 2</h3>
+                    <p>Insert your project details for subtab 2 here.</p>
+                </div>
+                <div id="tab3" class="subtab">
+                    <h3>Subtab 3</h3>
+                    <p>Insert your project details for subtab 3 here.</p>
+                </div>
+                <div id="tab4" class="subtab">
+                    <h3>Subtab 4</h3>
+                    <p>Insert your project details for subtab 4 here.</p>
+                </div>
+                
+                <!-- Additional Subtabs -->
+                <div id="tab1" class="subtab">
+                    <h3>Subtab 5</h3>
+                    <p>Insert your project details for subtab 5 here.</p>
+                </div>
+                <div id="tab2" class="subtab">
+                    <h3>Subtab 6</h3>
+                    <p>Insert your project details for subtab 6 here.</p>
+                </div>
+                <div id="tab3" class="subtab">
+                    <h3>Subtab 7</h3>
+                    <p>Insert your project details for subtab 7 here.</p>
+                </div>
+                <div id="tab4" class="subtab">
+                    <h3>Subtab 8</h3>
+                    <p>Insert your project details for subtab 8 here.</p>
+                </div>
+                
+                <!-- Additional Subtabs -->
+                <div id="tab1" class="subtab">
+                    <h3>Subtab 9</h3>
+                    <p>Insert your project details for subtab 9 here.</p>
+                </div>
+                <div id="tab2" class="subtab">
+                    <h3>Subtab 10</h3>
+                    <p>Insert your project details for subtab 10 here.</p>
+                </div>
+                <div id="tab3" class="subtab">
+                    <h3>Subtab 11</h3>
+                    <p>Insert your project details for subtab 11 here.</p>
+                </div>
+                <div id="tab4" class="subtab">
+                    <h3>Subtab 12</h3>
+                    <p>Insert your project details for subtab 12 here.</p>
+                </div>
+                
+                <!-- Additional Subtabs -->
+                <div id="tab1" class="subtab">
+                    <h3>Subtab 13</h3>
+                    <p>Insert your project details for subtab 13 here.</p>
+                </div>
+                <div id="tab2" class="subtab">
+                    <h3>Subtab 14</h3>
+                    <p>Insert your project details for subtab 14 here.</p>
+                </div>
+                <div id="tab3" class="subtab">
+                    <h3>Subtab 15</h3>
+                    <p>Insert your project details for subtab 15 here.</p>
+                </div>
+                <div id="tab4" class="subtab">
+                    <h3>Subtab 16</h3>
+                    <p>Insert your project details for subtab 16 here.</p>
+                </div>
             </div>
-            <div id="tab2" class="subtab">
-                <h3>Subtab 2</h3>
-                <p>Insert your project details for subtab 2 here.</p>
-            </div>
-            <div id="tab3" class="subtab">
-                <h3>Subtab 3</h3>
-                <p>Insert your project details for subtab 3 here.</p>
-            </div>
-            <div id="tab4" class="subtab">
-                <h3>Subtab 4</h3>
-                <p>Insert your project details for subtab 4 here.</p>
-            </div>
-        </div>
     </div>
 
     <script>
