@@ -79,6 +79,8 @@
             padding: 20px;
         }
         .subtab {
+            flex-direction: row; /* Change flex-direction to column */
+            display: flex; /* Change display to flex */
             display: none;
             padding: 10px;
             background-color: #f9f9f9;
@@ -86,8 +88,6 @@
         }
 
         .subtabcontent {
-            flex-direction: row; /* Change flex-direction to column */
-            display: flex; /* Change display to flex */
             padding: 6px 12px;
             border: 1px solid #ccc;
             border-top: none;
@@ -199,7 +199,7 @@
 
                 <!-- Subtabs -->
                 <div id="tab1" class="tabcontent" style="display:block">
-                    <div class="tab">
+                    <div class="subtab">
                         <button class="tablinks" onclick="openSubTab(event, 'subtab1')">Airline</button>
                         <button class="tablinks" onclick="openSubTab(event, 'subtab2')">Titanic</button>
                         <button class="tablinks" onclick="openSubTab(event, 'subtab3')">Cars</button>
