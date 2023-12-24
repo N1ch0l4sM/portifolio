@@ -197,14 +197,14 @@
                 </div>
 
                 <!-- Subtabs -->
-                <div id="tab1" class="tabcontent">
+                <div id="tab1" class="tabcontent" style="display:block">
                     <div class="tab">
                         <button class="tablinks" onclick="openSubTab(event, 'subtab1')">Airline</button>
                         <button class="tablinks" onclick="openSubTab(event, 'subtab2')">Titanic</button>
                         <button class="tablinks" onclick="openSubTab(event, 'subtab3')">Cars</button>
                         <button class="tablinks" onclick="openSubTab(event, 'subtab4')">Hurricane</button>
                     </div>
-                    <div id="subtab1" class="subtabcontent">
+                    <div id="subtab1" class="subtabcontent" style="display:block">
                         <!-- Slideshow container -->
                         <div class="slideshow-container">
 
@@ -336,11 +336,6 @@
                         slides[slideIndex-1].style.display = "block";
                         dots[slideIndex-1].className += " active";
                     }
-                    window.addEventListener('load', function (e) {
-                        document.getElementById("tab1").click();
-                        document.getElementById("subtab1").click();
-                    });
-
                 </script>
         </div>
     </div>
