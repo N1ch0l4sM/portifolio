@@ -283,8 +283,7 @@
                 </div>
 
                 <script>
-                    document.getElementById("tab1").click();
-                    document.getElementById("subtab1").click();
+
                     function openTab(event, tabName) {
                         var i, tabcontent, tablinks;
                         tabcontent = document.getElementsByClassName("tabcontent");
@@ -318,12 +317,10 @@
                     function plusSlides(n) {
                         showSlides(slideIndex += n);
                     }
-
                     // Thumbnail image controls
                     function currentSlide(n) {
                         showSlides(slideIndex = n);
                     }
-
                     function showSlides(n) {
                         let i;
                         let slides = document.getElementsByClassName("mySlides");
@@ -339,6 +336,11 @@
                         slides[slideIndex-1].style.display = "block";
                         dots[slideIndex-1].className += " active";
                     }
+                    window.addEventListener('load', function (e) {
+                        document.getElementById("tab1").click();
+                        document.getElementById("subtab1").click();
+                    });
+
                 </script>
         </div>
     </div>
