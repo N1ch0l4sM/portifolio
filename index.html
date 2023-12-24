@@ -6,6 +6,8 @@
         /* CSS styles for the layout */
         /* Style the tab */
         .tab {
+            display: flex;
+            flex-direction: row;
             overflow: hidden;
             border: 1px solid #ccc;
             background-color: #f1f1f1;
@@ -45,10 +47,11 @@
 
         /* Style the tab content */
         .tabcontent {
-        display: none;
-        padding: 6px 12px;
-        border: 1px solid #ccc;
-        border-top: none;
+            display: flex;
+            flex-direction: row;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
         }
         html, body {
             height: 100%;
@@ -79,18 +82,20 @@
             padding: 20px;
         }
         .subtab {
-            display: flex;
-            flex-direction: row;
-            padding: 10px;
-            background-color: #f9f9f9;
-            margin-top: 10px;
+            float: left;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            width: 30%;
+            height: 300px;
         }
 
         .subtabcontent {
-            display: none; 
-            padding: 6px 12px;
+            float: left;
+            padding: 0px 12px;
             border: 1px solid #ccc;
-            border-top: none;
+            width: 70%;
+            border-left: none;
+            height: 300px;
         }
         * {box-sizing:border-box}
 
