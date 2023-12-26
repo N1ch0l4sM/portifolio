@@ -133,12 +133,12 @@
 
         /* Position the "next button" to the right */
         .next {
-        right: 25;
+        right: 10px;
         border-radius: 3px 0 0 3px;
         }
         /* Position the "prev button" to the left */
         .prev {
-            left: 25;
+            left: 10px;
         }
 
         /* On hover, add a black background color with a little bit see-through */
@@ -257,16 +257,16 @@
                             </div>
 
                             <!-- Next and previous buttons -->
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            <a class="prev" onclick="plusSlides(-1, 'da1')">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 'da1')">&#10095;</a>
                             <div style="position: absolute; bottom: 0%;">
-                                <span class="dot" onclick="currentSlide(1)"></span>
-                                <span class="dot" onclick="currentSlide(2)"></span>
-                                <span class="dot" onclick="currentSlide(3)"></span>
-                                <span class="dot" onclick="currentSlide(4)"></span>
-                                <span class="dot" onclick="currentSlide(5)"></span>
-                                <span class="dot" onclick="currentSlide(6)"></span>
-                                <span class="dot" onclick="currentSlide(7)"></span>
+                                <span class="dot" onclick="currentSlide(1, 'da1')"></span>
+                                <span class="dot" onclick="currentSlide(2, 'da1')"></span>
+                                <span class="dot" onclick="currentSlide(3, 'da1')"></span>
+                                <span class="dot" onclick="currentSlide(4, 'da1')"></span>
+                                <span class="dot" onclick="currentSlide(5, 'da1')"></span>
+                                <span class="dot" onclick="currentSlide(6, 'da1')"></span>
+                                <span class="dot" onclick="currentSlide(7, 'da1')"></span>
                             </div>
                             </div>
 
@@ -314,16 +314,16 @@
                             </div>
 
                             <!-- Next and previous buttons -->
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            <a class="prev" onclick="plusSlides(-1, 'da2')">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 'da2')">&#10095;</a>
                             <div style="position: absolute; bottom: 0%;">
-                                <span class="dot" onclick="currentSlide(1)"></span>
-                                <span class="dot" onclick="currentSlide(2)"></span>
-                                <span class="dot" onclick="currentSlide(3)"></span>
-                                <span class="dot" onclick="currentSlide(4)"></span>
-                                <span class="dot" onclick="currentSlide(5)"></span>
-                                <span class="dot" onclick="currentSlide(6)"></span>
-                                <span class="dot" onclick="currentSlide(7)"></span>
+                                <span class="dot" onclick="currentSlide(1, 'da2')"></span>
+                                <span class="dot" onclick="currentSlide(2, 'da2')"></span>
+                                <span class="dot" onclick="currentSlide(3, 'da2')"></span>
+                                <span class="dot" onclick="currentSlide(4, 'da2')"></span>
+                                <span class="dot" onclick="currentSlide(5,'da2')"></span>
+                                <span class="dot" onclick="currentSlide(6, 'da2')"></span>
+                                <span class="dot" onclick="currentSlide(7, 'da2')"></span>
                             </div>
                             </div>
 
@@ -335,6 +335,7 @@
                         </div>
                     </div>
 
+                    
                         <h2>Machine Learning</h2>
                         <div class="tab">
                             <button class="tablinks" onclick="openTab(event, 'ml1')">Diabetes</button>
@@ -368,11 +369,11 @@
                         <!-- Content for Project 1 -->
                         </div>
                 
-
                 <script>
 
                     function openTab(event, tabName) {
                         var i, tabcontent, tablinks;
+
                         tabcontent = document.getElementsByClassName("tabcontent");
                         for (i = 0; i < tabcontent.length; i++) {
                             tabcontent[i].style.display = "none";
@@ -383,6 +384,8 @@
                         }
                         document.getElementById(tabName).style.display = "block";
                         event.currentTarget.className += " active";
+                        slideIndex = 1;
+                        showSlides(slideIndex, tabName);
                     }
 
                     function openSubTab(event, subTabName) {
@@ -399,19 +402,20 @@
                         event.currentTarget.className += " active";
                     }
                     let slideIndex = 1;
-                    showSlides(slideIndex);
+                    let id = "da1";
+                    showSlides(slideIndex, id);
                     // Next/previous controls
-                    function plusSlides(n) {
-                        showSlides(slideIndex += n);
+                    function plusSlides(n, id) {
+                        showSlides(slideIndex += n, id);
                     }
                     // Thumbnail image controls
-                    function currentSlide(n) {
-                        showSlides(slideIndex = n);
+                    function currentSlide(n, id) {
+                        showSlides(slideIndex = n, id);
                     }
-                    function showSlides(n) {
+                    function showSlides(n, id) {
                         let i;
-                        let slides = document.getElementsByClassName("mySlides");
-                        let dots = document.getElementsByClassName("dot");
+                        let slides = document.getElementById(id).getElementsByClassName("mySlides");
+                        let dots = document.getElementById(id).getElementsByClassName("dot");
                         if (n > slides.length) {slideIndex = 1}
                         if (n < 1) {slideIndex = slides.length}
                         for (i = 0; i < slides.length; i++) {
