@@ -203,6 +203,11 @@
         .project-description {
             flex: 1;
         }
+        #bottom {
+            position: absolute;
+            bottom: 3%;
+            left: 3%;
+        }
         </style>
     </head>
     <body>
@@ -210,7 +215,33 @@
             <div class="left-side">
                 <!-- Static text and information -->
                 <h1>Data Science Portifolio</h1>
+                <p>by Nicholas Melenek</p>
+                    <img src="profile.jpeg" width="30%" style="border-radius: 50%;">
                 <p>Welcome to my Data Science Portfolio! Here, you will find a collection of projects showcasing my skills and expertise in the field of data science. From data analysis to machine learning, SQL to Tableau, I have worked on a variety of projects that demonstrate my ability to extract insights and make data-driven decisions.</p>
+            <p>This site is still under construction. My knowledge of HTML, CSS, and JavaScript is currently limited, so I'm building this with the assistance of GitHub Copilot and resources I find on the internet. I still have a long way to go, and I'm continually making updates to this site. This portfolio will showcase my data science projects and skills as they develop. Thank you for your patience and understanding.</p>
+            
+            <div id="bottom">
+            <h1>About me:</h1>
+                <p>Name: Nicholas Melenek<br>
+                    Formation: Bachalor on Physics and Masters On materials science and engineering<br>
+                    Location: Brazil<br>
+                    Email: nicholasmelenek@ufpr.br<br>
+                    
+                </p>
+                <div class="container">
+                    <!-- Existing code... -->
+    
+                    <!-- LinkedIn and GitHub icons with links -->
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/nicholasmelenek" target="_blank">
+                            <img src="data:image/png;base64,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" alt="LinkedIn" class="icon image-size" height="30">
+                        </a>
+                        <a href="https://github.com/N1ch0l4sM" target="_blank">
+                            <img src="data:image/png;base64,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" alt="GitHub" class="icon" height="30">
+                        </a>
+                    </div>
+                </div>
+            </div>
             </div>
             <div class="right-side">
                 <!-- Data Analysis Section -->
@@ -285,6 +316,7 @@
                                     
                                     This project showcased my ability to manipulate data using pandas, create meaningful visualizations with seaborn and matplotlib, and draw insights from complex datasets.
                                 </p>
+                                <a href="https://github.com/N1ch0l4sM/Airline-Analysis/blob/master/Airline%20Analysis.ipynb">Jupyter Notebook</a>
                             </div>
                         </div>
                     </div>
@@ -351,6 +383,8 @@
                                     
                                     This project demonstrated my ability to handle real-world data cleaning tasks and to draw meaningful insights from a cleaned dataset. It showcased my proficiency in Python, pandas, and data visualization libraries, as well as my attention to detail and problem-solving skills in the face of messy data.
                                 </p>
+                                <a href="https://github.com/N1ch0l4sM/Cleaning-US-Census-Data/blob/master/Cleaning%20US%20Census%20Data.ipynb">Jupyter Notebook</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -398,7 +432,16 @@
                         <br>
 
                             <div class="project-description">
-                                <p>This is some text about Project 3. It is a very interesting project that involves...</p>
+                                <p><strong>EDA Diagnosing Diabetes</strong></p>                                    
+                                    <p>In this project, I conducted an exploratory data analysis (EDA) on a diabetes dataset. The main goal was to identify patterns and relationships in the data that could aid in the diagnosis of diabetes.
+                                    
+                                    The dataset included various health metrics such as BMI (Body Mass Index) and Skin Thickness, among others. Python, along with libraries like pandas for data manipulation and matplotlib for data visualization, were used extensively throughout the project.
+                                    
+                                    One of the key visualizations created was a scatterplot of BMI vs Skin Thickness. This plot helped in understanding the relationship between these two variables, which could potentially be significant in diagnosing diabetes.
+                                    
+                                    The project demonstrated my ability to conduct thorough exploratory data analysis using Python and its powerful libraries. It also showcased my skills in creating meaningful data visualizations to understand complex datasets and draw insights from them.
+                                </p>
+                                <a href="https://github.com/N1ch0l4sM/EDA-Diagnosing-Diabetes/blob/master/EDA%20Diagnosing%20Diabetes.ipynb">Jupyter Notebook</a>
                             </div>
                         </div>
                     </div>
@@ -455,7 +498,17 @@
                         <br>
 
                             <div class="project-description">
-                                <p>This is some text about Project 4. It is a very interesting project that involves...</p>
+                                <p><strong>Titanic Survival Analysis</strong></p>
+                                    <p>
+                                    In this project, I conducted an in-depth analysis of the Titanic dataset, focusing on the survival rates of passengers based on their embarkation point. The dataset included various passenger details, but the primary focus was on the 'Embarked' feature, which indicates the port of embarkation.
+                                    
+                                    The main tool used for this analysis was Python, with libraries including pandas for data manipulation, matplotlib for data visualization, and pywaffle for creating waffle charts.
+                                    
+                                    One of the key components of the project was the creation of a waffle chart to visualize the distribution of survivors based on their embarkation point. This provided valuable insights into the survival rates of passengers from different ports.
+                                    
+                                    The project demonstrated my ability to manipulate data using pandas, create meaningful visualizations with matplotlib and pywaffle, and draw insights from complex datasets.
+                                </p>
+                                <a href="https://github.com/N1ch0l4sM/titanic/blob/master/titanic.ipynb">Jupyter Notebook</a>
                             </div>
                         </div>
                     </div>
